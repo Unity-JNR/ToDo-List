@@ -1,1 +1,1 @@
-# ToDo-List
+JavaScript assignment - creating a todo app
