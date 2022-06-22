@@ -15,8 +15,7 @@
 }
 body{ background: var(--dark);
     color: white;}
-header .navbar{padding: .5rem 0;}
-header nav.navbar .navbar-brand{color:#fff;}
+
 section.todo-outer {
     width: 100%;
     float: left;
