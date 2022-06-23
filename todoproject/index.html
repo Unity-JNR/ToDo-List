@@ -17,25 +17,32 @@
       <div class="row justify-content-md-center">
         <div class="col-sm-12 col-md-8">
           <h1><picture>
-            <source media="(min-width:650px)" srcset="/todoproject/img/task.png">
+            <!-- display images , smaller screens will have a different image -->
+            <source media="(min-width:650px)" srcset="/todoproject/img/list.jpg">
             <img src="/todoproject/img/task.png" alt="task" id="imgtask"/>
             Todo List </h1>
           <div class="todo-inner">
             <div class="form-row">
               <div class="col-8 mr-sm-2">
+                <!-- text box to input what task you need to do -->
                 <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                <!-- <input type="date" class="form-control" id="addtaskdate"/> code work but didnt change when edited for the date -->
                 <input type="hidden" id="saveindex">
               </div>
+              <!-- button to add task to the list -->
               <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
                 Add Task
               </button>
+              <!-- button will appear when edit button is clicked on the task list -->
               <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
                 Save Task
               </button>
+              <!-- will remove all task that has been added -->
               <button type="button" id="deleteallbtn" class="btn btn-danger">
                 Delete All
               </button>
             </div>
+            <!-- all task will display in this area -->
             <div class="to-do-output">
               <table class="table table-striped mt-3 mb-0" id="addedtasklist">
                 

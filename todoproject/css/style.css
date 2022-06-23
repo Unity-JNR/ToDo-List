@@ -1,3 +1,7 @@
+/* all styles below will customize the website to look different
+customizes the fonts, background, image sizes, appearances of the buttons and placement of the objects */
+
+
 @font-face {
 	font-family: 'Roboto-Regular';
 	src: url('../fonts/Roboto-Regular.eot');
@@ -70,4 +74,5 @@ table tr td button {
     img{
         height: 3.5rem;
         width: 3.5rem;
+        mix-blend-mode: multiply;
     }
