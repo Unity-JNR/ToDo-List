@@ -2,7 +2,13 @@ showtask();
 let addtaskinput = document.getElementById("addtaskinput");
 let addtaskbtn = document.getElementById("addtaskbtn");
 
-addtaskbtn.addEventListener("click", function(){
+addtaskbtn.addEventListener("click" ,function(){
+
+    // if(!addtaskinput.value){
+    //     alert("please fill out task");
+    //     return;
+    // } suppose to return error message
+   
     addtaskinputval = addtaskinput.value;
     if(addtaskinputval.trim()!=0){
         let webtask = localStorage.getItem("localtask");
@@ -16,8 +22,10 @@ addtaskbtn.addEventListener("click", function(){
 		// console.log(taskObj, 'Unity');
         localStorage.setItem("localtask", JSON.stringify(taskObj));
         addtaskinput.value = '';
+      
     }
     showtask();
+   
 })
 
 // showtask: function to retrieve the localstorage
